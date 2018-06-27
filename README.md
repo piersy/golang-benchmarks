@@ -8,3 +8,8 @@ Indulging my curiosity benchmarking parts of the go language.
 
 # Usage
 `go test -bench .`
+
+## Seeing the assembly behind the code
+`go test -cpuprofile cpu.prof -bench=<test_name>`
+then
+`go tool pprof -weblist . golang-benchmarks.test cpu.prof`

@@ -1,2 +1,4 @@
 # go test binary files 
 *.test
+# profiling data
+*.prof
